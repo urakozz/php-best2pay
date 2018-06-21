@@ -6,7 +6,7 @@ Best2Pay API integration (including Laravel service provider)
 
 ## Installation
 ```bash
-composer require kozz/best2pay ~0.1
+composer require kozz/best2pay ~0.2
 ```
 
 ### Laravel service registration
