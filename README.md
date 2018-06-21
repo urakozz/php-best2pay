@@ -12,7 +12,7 @@ composer require kozz/best2pay ~0.1
 ### Laravel service registration
 Package supports auto discovery for Laravel > 5.5
 
-If you have Laravel <5.5, add service provider
+If you have Laravel <5.5, add service provider in `configs/app.php`
 ```php
 'providers' => [
     /*
@@ -25,6 +25,14 @@ If you have Laravel <5.5, add service provider
      */
     ...
     Kozz\Best2Pay\Laravel\Providers\Best2PayServiceProvider::class
+],
+```
+
+You can also add Facade (`configs/app.php`)
+```php
+'aliases' => [
+    ...
+    'Best2Pay' => Kozz\Best2Pay\Laravel\Facades\Best2PayFacade::class
 ],
 ```
 
