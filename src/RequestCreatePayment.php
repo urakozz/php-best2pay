@@ -21,5 +21,5 @@ namespace Kozz\Best2Pay;
  */
 class RequestCreatePayment extends \ArrayObject
 {
-
+    use ObjectAccessTrait;
 }

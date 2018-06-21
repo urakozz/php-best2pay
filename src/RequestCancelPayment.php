@@ -15,5 +15,5 @@ namespace Kozz\Best2Pay;
  */
 class RequestCancelPayment extends \ArrayObject
 {
-
+    use ObjectAccessTrait;
 }

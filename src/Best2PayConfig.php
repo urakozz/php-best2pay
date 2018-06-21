@@ -18,6 +18,7 @@ namespace Kozz\Best2Pay;
  */
 class Best2PayConfig extends \ArrayObject
 {
+    use ObjectAccessTrait;
     public function __construct($input = array(), $flags = 0, $iterator_class = "ArrayIterator")
     {
         parent::__construct($input, $flags, $iterator_class);
@@ -34,4 +35,5 @@ class Best2PayConfig extends \ArrayObject
             $this->isTest = false;
         }
     }
+
 }

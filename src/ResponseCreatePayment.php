@@ -15,6 +15,7 @@ namespace Kozz\Best2Pay;
  */
 class ResponseCreatePayment extends \ArrayObject
 {
+    use ObjectAccessTrait;
     /**
      * @var string
      */
