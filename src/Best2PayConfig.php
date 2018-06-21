@@ -6,7 +6,7 @@
  * Time: 10:07
  */
 
-namespace Kozz\Best2Pay\Laravel;
+namespace Kozz\Best2Pay;
 
 /**
  * Class Best2PayConfig

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Kozz\Best2Pay\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 use Kozz\Best2Pay\Best2Pay;
