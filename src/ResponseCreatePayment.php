@@ -15,5 +15,26 @@ namespace Kozz\Best2Pay;
  */
 class ResponseCreatePayment extends \ArrayObject
 {
+    /**
+     * @var string
+     */
+    protected $originalResponseString;
 
+    /**
+     * @param $string
+     * @return $this
+     */
+    public function setOriginalResponseString($string)
+    {
+        $this->originalResponseString = $string;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOriginalResponseString()
+    {
+        return $this->originalResponseString;
+    }
 }

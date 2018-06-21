@@ -77,7 +77,7 @@ class Best2Pay
         if (isset($body['code'])) {
             throw new \DomainException("error creating order: " . $body['code'] . ", " . $body['description']);
         }
-        return new ResponseCreatePayment($body);
+        return (new ResponseCreatePayment($body))->setOriginalResponseString($bodyString);
     }
 
     public function getPaymentRedirectUrl($id)
