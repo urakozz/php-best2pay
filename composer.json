@@ -29,5 +29,15 @@
     "psr-4": {
       "Kozz\\Best2Pay\\": "src/"
     }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Kozz\\Best2Pay\\Laravel\\Providers\\Best2PayServiceProvider"
+      ]
+    }
   }
 }
