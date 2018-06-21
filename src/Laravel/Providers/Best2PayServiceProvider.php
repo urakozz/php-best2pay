@@ -15,7 +15,7 @@ class Best2PayServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/Best2Pay/config/best2pay.php' => config_path('best2pay.php'),
+            __DIR__ . '/config/best2pay.php' => config_path('best2pay.php'),
         ]);
 
     }
