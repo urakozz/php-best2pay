@@ -1,15 +1,36 @@
-Composer Library Template
-=========================
-
-If you are trying to create a new PHP Composer library, whether it will be going to submitted to packagist.org or just in your Github account, this template of files will surely help you make the process a lot easier and faster.
-
-Features
---------
-
-* PSR-4 autoloading compliant structure
-* Unit-Testing with PHPUnit
-* Comprehensive Guides and tutorial
-* Easy to use to any framework or even a plain php file
+Best2Pay integration
+====================
+Best2Pay API integration (including Laravel service provider)
 
 
-I encourage that you put more information on this readme file instead of leaving it as is. See [http://www.darwinbiler.com/designing-and-making-the-readme-file-for-your-github-repository/](How to make a README file) for more info.
+
+## Installation
+```bash
+composer require kozz/best2pay ~0.1
+```
+
+## Laravel service registration
+Package supports auto discovery for Laravel > 5.5
+
+If you have Laravel <5.5, add service provider
+```php
+'providers' => [
+    /*
+     * Laravel Framework Service Providers...
+     */
+    ...
+
+    /*
+     * Application Service Providers...
+     */
+    ...
+    Kozz\Best2Pay\Laravel\Providers\Best2PayServiceProvider::class
+],
+```
+
+Then run command (it will create `config/best2pay.php` file)
+
+```bash
+php artisan vendor:publish
+```
+
