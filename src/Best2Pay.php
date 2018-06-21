@@ -3,7 +3,6 @@
 namespace Kozz\Best2Pay;
 
 use GuzzleHttp\ClientInterface;
-use Kozz\Best2Pay\Laravel\Best2PayConfig;
 use GuzzleHttp\Client;
 
 /**

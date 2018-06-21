@@ -30,7 +30,7 @@ class Best2PayConfig extends \ArrayObject
         if (!isset($this->password)) {
             throw new \InvalidArgumentException("options.password should be present in config");
         }
-        if (!isset($this["isTest"])) {
+        if (!isset($input["isTest"])) {
             $this->isTest = false;
         }
     }
