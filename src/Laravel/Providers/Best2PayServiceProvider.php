@@ -27,7 +27,7 @@ class Best2PayServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('Kozz\Best2Pay\Best2Pay', function ($app) {
+        $this->app->singleton(Best2Pay::class, function ($app) {
             return new Best2Pay($app['config']['best2pay']);
         });
     }

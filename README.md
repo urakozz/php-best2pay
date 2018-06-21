@@ -9,7 +9,7 @@ Best2Pay API integration (including Laravel service provider)
 composer require kozz/best2pay ~0.1
 ```
 
-## Laravel service registration
+### Laravel service registration
 Package supports auto discovery for Laravel > 5.5
 
 If you have Laravel <5.5, add service provider
